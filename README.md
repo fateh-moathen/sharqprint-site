@@ -1,2 +1,0 @@
-# sharqprint-site
-مطبعة الشرق 
