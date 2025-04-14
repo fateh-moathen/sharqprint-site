@@ -7,8 +7,8 @@
     <title>مطبعة الشرق</title>
     <style>
         /* General Styles */
-        @import url('https://alqabas.net/fonts/alqabas.css'); /* Import Al Qabas Font */
-        @import url('https://db-on.com/fonts/laxr/font.css'); /* Import LAXR Font */
+        @import url('https://alfont.com/wp-content/fonts/diwany-arabic-fonts//alfont_com_AlFont_com_19304-alqabas-bold.ttf'); /* Import Al Qabas Font */
+        @import url('https://arbfonts.com//wp-content/fonts/new-arabic-fonts//LAXR.otf'); /* Import LAXR Font */
         body {
             font-family: 'Al Qabas', Arial, sans-serif;
             margin: 0;
