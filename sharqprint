@@ -21,7 +21,6 @@
             scroll-behavior: smooth; /* Smooth scrolling for transitions */
             position: relative;
         }
-
         /* Background Decorations */
         body::before {
             content: "الإبداع والاحترافية";
@@ -47,7 +46,6 @@
             z-index: -1;
             pointer-events: none;
         }
-
         header {
             background-color: #1f1d1e;
             color: #fefefe;
@@ -96,7 +94,6 @@
             padding: 15px 0;
             margin-top: 20px;
         }
-
         /* Home Section */
         #home {
             background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
@@ -114,7 +111,6 @@
         #home p {
             font-size: 1.2rem;
         }
-
         /* Social Media Section */
         #social-media ul {
             list-style: none;
@@ -153,7 +149,6 @@
         #social-media a:hover {
             opacity: 0.8;
         }
-
         /* About Us Section */
         #about-us {
             line-height: 1.6;
@@ -161,7 +156,6 @@
         #about-us h2 {
             margin-bottom: 20px;
         }
-
         /* Contact Info in Footer */
         footer p {
             margin: 0;
@@ -176,7 +170,6 @@
         footer a:hover {
             text-decoration: underline;
         }
-
         /* Tooltip Styling */
         .tooltip {
             position: relative;
@@ -209,14 +202,12 @@
     <header>
         <h1>مطبعة الشرق</h1>
     </header>
-
     <!-- Navigation -->
     <nav>
         <a href="#home">الرئيسية</a>
         <a href="#social-media">التواصل الاجتماعي</a>
         <a href="#about-us">من نحن</a>
     </nav>
-
     <!-- Home Section -->
     <section id="home" class="active">
         <div>
@@ -224,7 +215,6 @@
             <p>شريكك الإبداعي في خدمات الطباعة والتصميم</p>
         </div>
     </section>
-
     <!-- Social Media Section -->
     <section id="social-media">
         <h2>تواصل معنا</h2>
@@ -235,7 +225,6 @@
             <li><a href="https://t.me/Abdulazem_moazen" class="telegram" target="_blank"></a></li>
         </ul>
     </section>
-
     <!-- About Us Section -->
     <section id="about-us">
         <h2>من نحن</h2>
@@ -246,7 +235,6 @@
             نحن هنا لتغطية جميع احتياجاتك. ثق بنا لنحوّل أفكارك إلى واقع!
         </p>
     </section>
-
     <!-- Footer -->
     <footer>
         <p>
@@ -265,7 +253,6 @@
         </p>
         <p>&copy; 2023 مطبعة الشرق. جميع الحقوق محفوظة.</p>
     </footer>
-
     <script>
         // Function to copy text to clipboard
         function copyToClipboard(text, tooltipId) {
@@ -275,7 +262,6 @@
             tempTextArea.select();
             document.execCommand('copy');
             document.body.removeChild(tempTextArea);
-
             // Update tooltip text
             const tooltip = document.getElementById(tooltipId);
             tooltip.textContent = 'تم النسخ!';
@@ -283,7 +269,6 @@
                 tooltip.textContent = tooltipId === 'emailTooltip' ? 'نسخ البريد الإلكتروني' : 'نسخ رقم الهاتف';
             }, 2000);
         }
-
         // Add event listeners for email and phone number
         document.getElementById('emailToCopy').addEventListener('click', () => {
             copyToClipboard('malfateh977@gmail.com', 'emailTooltip');
@@ -291,7 +276,6 @@
         document.getElementById('phoneToCopy').addEventListener('click', () => {
             copyToClipboard('+963944359000', 'phoneTooltip');
         });
-
         // Add dynamic transitions when sections come into view
         document.addEventListener("DOMContentLoaded", () => {
             const sections = document.querySelectorAll("section");
@@ -304,7 +288,6 @@
             }, {
                 threshold: 0.2 // Trigger when 20% of the section is visible
             });
-
             sections.forEach(section => observer.observe(section));
         });
     </script>
